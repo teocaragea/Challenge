@@ -18,6 +18,14 @@ Go to Setup -> object manager -> lead -> create a validation rule that blocks fo
 1. a new record of type Acquired is created
 2. record type is changed and current record type is Acquired.
 
+
+Steps for deployment of my solution:
+1.Create a new Sandbox
+2.Install Visual Studio Code
+3.Install Salesforce CLI
+4.Open this project in VSC
+5.Go on manifest->package.xml-> right click and press deploy.
+
 Pre Release Steps: N/A
 
 Post Release Steps: Go to Lead object -> open Acquired Record Type and copy the id from link.
