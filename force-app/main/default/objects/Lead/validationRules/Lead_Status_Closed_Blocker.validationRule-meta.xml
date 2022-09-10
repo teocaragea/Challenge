@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Status_Closed_Blocker</fullName>
+    <active>true</active>
+    <description>This validation rule blocks the lead to be marked as completed if the source field is not completed.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Status,&quot;Closed - Converted&quot;),
+					  ISPICKVAL(Status,&quot;Closed - Not Converted&quot;)),
+					    ISBLANK(TEXT(LeadSource)) 
+					)</errorConditionFormula>
+    <errorMessage>Please, fill the lead source before closing this lead.</errorMessage>
+</ValidationRule>

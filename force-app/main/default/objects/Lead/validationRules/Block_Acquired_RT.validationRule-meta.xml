@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Acquired_RT</fullName>
+    <active>true</active>
+    <description>This VR block Acquired record type from editing</description>
+    <errorConditionFormula>OR(
+				AND(RecordType.DeveloperName=&apos;Acquired&apos;,
+				ISNEW()
+								),
+				AND(RecordType.DeveloperName=&apos;Acquired&apos;,
+        NOT(ISCHANGED(RecordTypeId))
+							)
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t edit this record type because is closed.</errorMessage>
+</ValidationRule>

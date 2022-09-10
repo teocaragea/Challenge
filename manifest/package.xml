@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead.Agent Group Assignment</members>
+		<name>AssignmentRule</name>
+	</types>
+	<types>
+		<members>Lead.Sales</members>
+		<name>BusinessProcess</name>
+	</types>
+	<types>
+		<members>Lead</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Lead_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Change_Record_Type_to</members>
+		<members>Lead_status_update</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Lead-Lead Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Admin</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>Agent</members>
+		<name>Queue</name>
+	</types>
+	<types>
+		<members>Lead.Acquired</members>
+		<members>Lead.Default_Lead</members>
+		<name>RecordType</name>
+	</types>
+	<types>
+		<members>Lead.Block_Acquired_RT</members>
+		<members>Lead.Lead_Status_Closed_Blocker</members>
+		<name>ValidationRule</name>
+	</types>
+	<version>55.0</version>
+</Package>
