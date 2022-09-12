@@ -19,16 +19,21 @@ Go to Setup -> object manager -> lead -> create a validation rule that blocks fo
 2. record type is changed and current record type is Acquired.
 
 
-Steps for deployment of my solution:
+<b>Steps for deployment of my solution:</b>
+
 1.Create a new Sandbox
+
 2.Install Visual Studio Code
+
 3.Install Salesforce CLI
+
 4.Open this project in VSC
+
 5.Go on manifest->package.xml-> right click and press deploy.
 
-Pre Release Steps: N/A
+<b>Pre Release Steps: N/A </b>
 
-Post Release Steps: Go to Lead object -> open Acquired Record Type and copy the id from link.
+<b>Post Release Steps: Go to Lead object -> open Acquired Record Type and copy the id from link.
                     Go to Flows -> open 'Change Record Type to Acquired'. Go to Resources -> constants and open AcquiredRecordTypeID -> past the Id that you copied in the value section. Save the flow as a new version.
 
 So in this challenge i create one queue Agent to be owner of lead records when a new lead is created. I use on assignment rule for this to be done. Then I create a record trigger flow to update the status. This could be handled with a before insert flow, but it is a simple update on record so I choose this type of flow, as salesforce recommend.
