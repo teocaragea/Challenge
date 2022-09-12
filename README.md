@@ -3,17 +3,27 @@
 <b>Technical Design:</b>
 
 Go to Setup and search for queue and create one named 'Agent' for lead object.
+
 Go to Setup and search for Lead Assignment Rules and create one. Put priority as 1.
+
 Go to Setup and search for Flows and create one Record Trigger Flow and choose:
+
 -Lead as an object. 
+
 -Trigger the Flow When: 'A record is created'
+
 Then add an element: Update Triggering record and at Set Field Values for the Lead Record select Status and the value: Working.
-go to Setup -> object manager -> serch for lead and create a new validation rule that blocks if status is closed/completed and source is blank.
+
+Go to Setup -> object manager -> serch for lead and create a new validation rule that blocks if status is closed/completed and source is blank.
+
 Go to one lead record -> pres the wheel -> press edit page -> press on path and hide path update button
+
 Go to Setup and search for Flows and create one Record Trigger Flow and choose:
 -Lead as an object. 
 -Trigger the Flow When: 'A record is updated'
+
 Then add an element: Update Triggering record and Set Field Values for the Lead Record select RecordTypeID and as value put the recordtypeID value (you can find it if you open object manager -> lead -> recordtypes and select the Acquired record type and copy the id from link)
+
 Go to Setup -> object manager -> lead -> create a validation rule that blocks for one of next 2 scenarios:
 1. a new record of type Acquired is created
 2. record type is changed and current record type is Acquired.
