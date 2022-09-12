@@ -1,6 +1,6 @@
 ## Here I will explain what I do and how I do this challenge
 
-Technical Design:
+<b>Technical Design:</b>
 
 Go to Setup and search for queue and create one named 'Agent' for lead object.
 Go to Setup and search for Lead Assignment Rules and create one. Put priority as 1.
